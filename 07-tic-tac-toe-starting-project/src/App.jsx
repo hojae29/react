@@ -25,7 +25,7 @@ function App() {
     });
   }
 
-  console.log('app render');
+  console.log("app render");
 
   return (
     <main>
@@ -44,7 +44,7 @@ function App() {
         </ol>
         <GameBoard onSelectSqure={handleSelectSquare} turns={gameTurns} />
       </div>
-      LOG
+      <Log turns={gameTurns} />
     </main>
   );
 }
