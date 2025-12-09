@@ -3,6 +3,16 @@ import Player from "./components/Player.jsx";
 import GameBoard from "./components/GameBoard.jsx";
 import Log from "./components/Log.jsx";
 
+import { WINNING_COMBINATIONS } from "./winning-combinations.js";
+
+const WINNING_COMBINATIONS = [
+  [
+    {row: 0, col: 0},
+    {row: 0, col: 1},
+    {row: 0, col: 2},
+  ]
+];
+
 function deriveActivePlayer(gameTurns) {
   let currentPlayer = "X";
 
